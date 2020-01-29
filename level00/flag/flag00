@@ -1,0 +1,25 @@
+#first find UUID for user flag00
+grep flag00 /etc/passwrd
+
+--> flag00:x:3000:3000....
+             UUID
+
+#then find executable file for this user
+
+find / -uid 3000
+
+#one file is retured 
+
+--> /rofs/usr/sbin/john 2>&1 \ grep -v "Permission denied"
+
+if we look at it we find 
+
+cat /rofs/usr/sbin/john 2>&1 | grep -v "Permission denied"
+
+--> cdiiddwpgswtgt
+
+# use of script for caser cyfer
+
+#we find  string : nottohardhere
+
+#we find a code, making use able to go to level01 --> x24ti5gi3x0ol2eh4esiuxias
